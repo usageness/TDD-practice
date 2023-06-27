@@ -1,0 +1,22 @@
+{
+  "devDependencies": {
+    "jest": "^29.5.0"
+  },
+  "name": "tdd-practice",
+  "version": "1.0.0",
+  "description": "TDD 연습을 위한 테스트 환경",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/usageness/TDD-practice.git"
+  },
+  "author": "usageness <kyr9389@naver.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/usageness/TDD-practice/issues"
+  },
+  "homepage": "https://github.com/usageness/TDD-practice#readme"
+}
