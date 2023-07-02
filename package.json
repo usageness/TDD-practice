@@ -1,7 +1,4 @@
 {
-  "devDependencies": {
-    "jest": "^29.5.0"
-  },
   "name": "tdd-practice",
   "version": "1.0.0",
   "description": "TDD 연습을 위한 테스트 환경",
@@ -18,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/usageness/TDD-practice/issues"
   },
-  "homepage": "https://github.com/usageness/TDD-practice#readme"
+  "homepage": "https://github.com/usageness/TDD-practice#readme",
+  "devDependencies": {
+    "@babel/core": "^7.22.5",
+    "@babel/preset-env": "^7.22.5",
+    "babel-jest": "^29.5.0",
+    "jest": "^29.5.0"
+  }
 }
