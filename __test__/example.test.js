@@ -11,4 +11,9 @@ describe("TDD 연습을 위한 테스트입니다.", () => {
     product = five.times(3);
     expect(product.amount).toBe(15);
   });
+
+  it("equals() 테스트", () => {
+    expect(new Dollar(5).equals(new Dollar(5))).toBe(true);
+    expect(new Dollar(5).equals(new Dollar(6))).toBe(false);
+  });
 });
