@@ -7,3 +7,4 @@
 - [TDD 스터디 #0 - 스터디에 들어가며](https://usage.tistory.com/188)
 - [TDD 스터디 #1 - 역·저자의 글, 테스트 준비](https://usage.tistory.com/189)
 - [TDD 스터디 #2 - 화폐 예제 (다중 통화 지원하기)](https://usage.tistory.com/190)
+- [TDD 스터디 #3 - 화폐 예제 (다중 통화 구현 & 중복 제거)](https://usage.tistory.com/193)
