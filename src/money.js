@@ -1,12 +1,8 @@
-class Dollar {
+class Money {
   amount;
 
   constructor(amount) {
     this.amount = amount;
-  }
-
-  times(multiplier) {
-    return new Dollar(this.amount * multiplier);
   }
 
   equals(object) {
@@ -14,4 +10,30 @@ class Dollar {
   }
 }
 
-export default Dollar;
+class Dollar extends Money {
+  amount;
+
+  constructor(amount) {
+    super(amount);
+    this.amount = amount;
+  }
+
+  times(multiplier) {
+    return new Dollar(this.amount * multiplier);
+  }
+}
+
+class Franc extends Money {
+  amount;
+
+  constructor(amount) {
+    super(amount);
+    this.amount = amount;
+  }
+
+  times(multiplier) {
+    return new Franc(this.amount * multiplier);
+  }
+}
+
+export { Dollar, Franc };
