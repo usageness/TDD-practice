@@ -22,4 +22,9 @@ describe("TDD 연습을 위한 테스트입니다.", () => {
     expect(Money.franc(5).equals(Money.franc(6))).toBe(false);
     expect(Money.franc(5).equals(Money.dollar(5))).toBe(false);
   });
+
+  it("Currency 테스트", () => {
+    expect(Money.dollar(1).currency).toBe("USD");
+    expect(Money.franc(1).currency).toBe("CHF");
+  });
 });
