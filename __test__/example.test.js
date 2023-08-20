@@ -20,5 +20,6 @@ describe("TDD 연습을 위한 테스트입니다.", () => {
     expect(new Dollar(5).equals(new Dollar(6))).toBe(false);
     expect(new Franc(5).equals(new Franc(5))).toBe(true);
     expect(new Franc(5).equals(new Franc(6))).toBe(false);
+    expect(new Franc(5).equals(new Dollar(5))).toBe(false);
   });
 });

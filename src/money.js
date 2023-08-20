@@ -6,7 +6,7 @@ class Money {
   }
 
   equals(object) {
-    return this.amount === object.amount;
+    return object instanceof this.constructor && this.amount === object.amount;
   }
 }
 
