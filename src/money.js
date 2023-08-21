@@ -25,30 +25,12 @@ class Money {
 }
 
 class Dollar extends Money {
-  amount;
-  currency;
-
-  constructor(amount, currency) {
-    super(amount, currency);
-    this.amount = amount;
-    this.currency = currency;
-  }
-
   times(multiplier) {
     return Money.dollar(this.amount * multiplier);
   }
 }
 
 class Franc extends Money {
-  amount;
-  currency;
-
-  constructor(amount, currency) {
-    super(amount, currency);
-    this.amount = amount;
-    this.currency = currency;
-  }
-
   times(multiplier) {
     return Money.franc(this.amount * multiplier);
   }
