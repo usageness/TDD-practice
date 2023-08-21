@@ -8,11 +8,11 @@ class Money {
   }
 
   static dollar(amount) {
-    return new Dollar(amount, "USD");
+    return new Money(amount, "USD");
   }
 
   static franc(amount) {
-    return new Franc(amount, "CHF");
+    return new Money(amount, "CHF");
   }
 
   get currency() {
@@ -20,20 +20,12 @@ class Money {
   }
 
   equals(object) {
-    return object instanceof this.constructor && this.amount === object.amount;
+    return this.currency === object.currency && this.amount === object.amount;
   }
-}
 
-class Dollar extends Money {
   times(multiplier) {
-    return Money.dollar(this.amount * multiplier);
+    return new Money(this.amount * multiplier, this.currency);
   }
 }
 
-class Franc extends Money {
-  times(multiplier) {
-    return Money.franc(this.amount * multiplier);
-  }
-}
-
-export { Money, Dollar, Franc };
+export { Money };
